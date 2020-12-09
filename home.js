@@ -1,5 +1,13 @@
-let price = 49.99,
+let name2 = 'Stranger',
+    message = `Hello ${name2}`,
+    price = 49.99,
     name = 'Hiking Boots',
     discounted = false;
 
-showMessage(name);
+price *= 5;
+
+function showMessage(message) {
+    document.getElementById('message').textContent = message;
+}
+
+showMessage(message);
