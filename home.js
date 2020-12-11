@@ -12,7 +12,14 @@ function showMessage(message) {
 */
 // Otherwise your calculations could be off
 //The plus sign is a simple way to convert a string returned by toFixed back into a number
-if (+(1.1 + 1.3).toFixed(2) === 2.4) {
-    let message = 'hello';
-    showMessage(message);
-}
+// if (+(1.1 + 1.3).toFixed(2) === 2.4) {
+//     let message = 'hello';
+
+// Starts out with a condition
+// No if keyword
+// Then ? mark
+// True
+// False
+let price = 20;
+let message = (price < 10) ? ('yes') : ('no');
+showMessage(message);
