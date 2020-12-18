@@ -1,27 +1,18 @@
-// let name2 = 'Stranger',
-//     message = `Hello ${name2}`,
-//     price = 49.99,
-//     name = 'Hiking Boots',
-//     discounted = false;
 
-// function showMessage(message) {
-//     document.getElementById('message').textContent = message;
-// }
+const button = document.getElementById('see-review');
 
-/* When you are working with floating points, you always need to convert the floating point number to a fixed amount of decimal places if you're going to compare it to a literal. Such as 2.4
-*/
-// Otherwise your calculations could be off
-//The plus sign is a simple way to convert a string returned by toFixed back into a number
-// if (+(1.1 + 1.3).toFixed(2) === 2.4) {
-//     let message = 'hello';
+button.addEventListener('click', function() {
 
-// Starts out with a condition
-// No if keyword
-// Then ? mark
-// True
-// False
-// let price = 20;
-// let message = (price < 10) ? ('yes') : ('no');
-// showMessage(message);
+    const review = document.getElementById('review');
 
-changePercentOff(50);
+    if (review.classList.contains('d-none')) {
+        review.classList.remove('d-none');
+        button.textContent = 'CLOSE REVIEW';
+    }
+    else {
+        review.classList.add('d-none');
+        button.textContent = 'SEE REVIEW';
+    }
+    
+
+});
