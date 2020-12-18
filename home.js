@@ -4,9 +4,9 @@
 //     name = 'Hiking Boots',
 //     discounted = false;
 
-function showMessage(message) {
-    document.getElementById('message').textContent = message;
-}
+// function showMessage(message) {
+//     document.getElementById('message').textContent = message;
+// }
 
 /* When you are working with floating points, you always need to convert the floating point number to a fixed amount of decimal places if you're going to compare it to a literal. Such as 2.4
 */
@@ -20,6 +20,8 @@ function showMessage(message) {
 // Then ? mark
 // True
 // False
-let price = 20;
-let message = (price < 10) ? ('yes') : ('no');
-showMessage(message);
+// let price = 20;
+// let message = (price < 10) ? ('yes') : ('no');
+// showMessage(message);
+
+changePercentOff(50);
